@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Kashyap | Portfolio</title>
+    <!-- Favicon Added -->
+    <link rel="icon" type="image/png" href="listen.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <canvas id="matrix-bg"></canvas>
+
+    <header>
+        <nav>
+            <div class="logo"><span>&lt;</span>AK<span>/&gt;</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Abhishek Kashyap</h1>
+                <p class="subtitle">Turning code into secure, scalable, and creative solutions.</p>
+                <p class="tagline"><span id="typewriter"></span></p>
+                <div class="social-links">
+                    <a href="https://github.com/abhishek-ashyap" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/abhishek--kashyap/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:abhisheksingh00052@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="Abhishek Kashyap Fullstack.pdf" target="_blank" download="Abhishek_Kashyap_Resume.pdf" aria-label="Download Resume"><i class="fas fa-file-alt"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-me content-section">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>I am a B.Tech student at <strong>Galgotias University, Greater Noida</strong>, specializing in Computer Science and Engineering with a focus on Cybersecurity (2022–2026). My passion lies at the intersection of full-stack engineering, cybersecurity, and designing scalable systems. I am an avid competitive programmer and enjoy solving complex problems.</p>
+                    <p>Currently based in Greater Noida, Uttar Pradesh, I am constantly exploring new technologies and methodologies to enhance my skills and build robust, secure applications.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills content-section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Bash</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Libraries</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>Pandas</li>
+                        <li>NumPy</li>
+                        <li>Matplotlib</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks</h3>
+                    <ul>
+                        <li>Flask</li>
+                        <li>Node.js</li>
+                        <li>Tkinter</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li>SQLite</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>Linux CLI</li>
+                        <li>Wireshark</li>
+                        <li>Nmap</li>
+                        <li>Burp Suite</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Concepts</h3>
+                    <ul>
+                        <li>Data Structures</li>
+                        <li>Algorithms</li>
+                        <li>OOP</li>
+                        <li>REST APIs</li>
+                        <li>Secure SDLC</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects content-section">
+            <h2>Projects</h2>
+            <div class="project-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="full-stack">Full-Stack</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="full-stack security">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <h3>Flauth – Secure Login Simulation</h3>
+                        </div>
+                        <div class="project-card-back">
+                            <p>A full-stack authentication system built with React and Flask. Features bcrypt hashing, input validation, secure error handling, and protected data flow.</p>
+                            <a href="https://flauth.vercel.app/login" class="project-link" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="python">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <h3>SlimPy – BMI Calculator</h3>
+                        </div>
+                        <div class="project-card-back">
+                            <p>A desktop BMI calculator using Python, Tkinter, SQLite, and Matplotlib. Stores user data and visualizes BMI trends over time.</p>
+                            <a href="https://github.com/hustler-exe/SlimPy" class="project-link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="python security">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <h3>Python Network Traffic Analyzer</h3>
+                        </div>
+                        <div class="project-card-back">
+                            <p>An automated network analysis tool in Python, integrating Wireshark and Nmap for real-time traffic monitoring and packet inspection.</p>
+                             <a href="#" class="project-link" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="achievements content-section">
+            <h2>Achievements</h2>
+            <div class="achievements-list">
+                <div class="achievement-item">
+                    <h3>CCNA Certification</h3>
+                    <p>Cisco Certified Network Associate, validating my skills in network fundamentals, access, IP connectivity, and security.</p>
+                </div>
+                <div class="achievement-item">
+                    <h3>Capture The Flag (CTF)</h3>
+                    <p>Achieved a Top 50 rank out of 300+ participants in a national-level CTF, excelling in cryptography and network security challenges.</p>
+                </div>
+                <div class="achievement-item">
+                    <h3>Coders Cup Arena 2024</h3>
+                    <p>Participated in a highly competitive coding competition, solving complex algorithmic problems under pressure.</p>
+                </div>
+                 <div class="achievement-item">
+                    <h3>Ethical Hacking Tool Development</h3>
+                    <p>Developed custom ethical hacking tools, including a Wi-Fi deauthenticator and a Rubber Ducky script injector using a Raspberry Pi Pico WH.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact content-section">
+            <h2>Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:abhisheksingh00052@gmail.com">abhisheksingh00052@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> +91 8210593434</p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/hustler-exe" target="_blank">github.com/hustler-exe</a></p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/abhishek--kashyap/" target="_blank">linkedin.com/in/abhishek--kashyap</a></p>
+                </div>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                    <div id="form-status"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Abhishek Kashyap. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
